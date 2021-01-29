@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>본필</title>
+    <style>
+      h1{
+        margin: 0;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        align-content: center;
+      }
+      ul{
+        margin: 0;
+        padding: 20px;
+        border-right: 1px solid black;
+      }
+      #grid1{
+        display:grid;
+        grid-template-columns: 200px 200px 1fr;
+      }
+      #bfInfo{
+        margin: 0;
+        padding: 20px;
+      }
+      #ac{
+        .input{
+        .id txt_b{
+         type="text"  value="123";
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <script>
+    function siteEnter(){
+        var sitename = ["샵링커", "이베이"];
+        var siteAdress = ["https://ad2.shoplinker.co.kr/index.php" ,1];
+
+        var i = 0;
+        var a = 0;
+        while(i<sitename.length){
+        document.write('<li><a href="'+siteAdress[a]+'" target="_blank">'+sitename[i]+'</a></li>');
+        i = i+1;
+        a = a+1;
+      };
+        }
+    </script>
+
+    <h1><a href="index.html">본필 가이드</a></h1>
+    <div id ="grid1">
+        <ul>
+          <li><a href="site.html">사이트</a></li>
+          <li><a href="product.html">상품 정보</a></li>
+          <li><a href="theOther.html">기타 필요 정보</a></li>
+        </ul>
+    <div id = "site">
+      <h2 style="margin:0">사이트 목록</h2>
+      <ol>
+        <script>
+          siteEnter();
+        </script>
+
+      <h3>주문수집</h3>
+        <li><a href="https://ad2.shoplinker.co.kr/index.php"target="_blank">샵링크</a></li>
+      <h3 class="open">오픈마켓</h3>
+        <li><a href="https://www.esmplus.com/Member/SignIn/LogOn"target="_blank">이베이</a></li>
+        <li><a href="https://sell.smartstore.naver.com/#/login"target="_blank">네이버</a></li>
+        <li><a href="https://login.11st.co.kr/auth/front/selleroffice/login.tmall?returnURL=http://soffice.11st.co.kr"target="_blank">11번가</a></li>
+        <li><a href="https://wing.coupang.com/login"target="_blank">쿠팡</a></li>
+        <li><a href="https://supplier.coupang.com/login?returnUrl=https://supplier.coupang.com/"target="_blank">로켓배송 쿠팡</a></li>
+        <li><a href="https://wpartner.wemakeprice.com/login"target="_blank">위메프</a></li>
+        <li><a href="https://store.lotteon.com/cm/main/login_SO.wsp"target="_blank">롯데온</a></li>
+        <li><a href="https://ipss.interpark.com/member/login.do?_method=initial&imfsUserPath=&imfsUserQuery=null&FromLogin=Y&str=null&logintgt=null"target="_blank">인터파크</a></li>
+        <li><a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Fcomm-auth-web.kakao.com%2Flogin%2Fcheck?hash=zhlKI-RBbF4rrSuE42ITX5c-9HHXYsmNL91wwJrbQLU"target="_blank">카카오톡</a></li>
+        <li><a href="https://spc.tmon.co.kr/member/login?return_url=%2F"target="_blank">티몬</a></li>
+        <li><a href="https://spc.tmon.co.kr/member/login?return_url=%2F"target="_blank">티몬특가</a></li>
+      <h3 class="mall">종합몰</h3>
+        <li><a href="https://withgs.gsshop.com/cmm/login"target="_blank">GS</a></li>
+        <li><a href="https://splace.akmall.com/wqxml/loginSplace.html"target="_blank">AK</a></li>
+        <li><a href="https://po.ssgadm.com/authentication/login.ssg"target="_blank">신세계</a></li>
+        <li><a href="https://scm.halfclub.com/index.aspx?Adid=bonfeel&AdPwd=bfworld"target="_blank">하프</a></li>
+      <h3 class="wholesale">도매</h3>
+        <li><a href="https://domeggook.com/ssl/member/mem_loginForm.php?back=L21haW4vbWVtYmVyL21lbV9yZXF1ZXN0Q2hhbmdlUHdkLnBocD9iYWNrPUwyMWhhVzR2YVc1a1pYZ3VjR2h3UDJ4dloybHVQWEJq"target="_blank">도매꾹</a></li>
+        <li><a href="https://ownerclan.com/vender/"target="_blank">왕도매</a></li>
+        <li><a href="http://scm.funn.co.kr/login/login.asp"target="_blank">펀앤도매</a></li>
+        <li><a href="https://www.domesin.com/scm/login.html"target="_blank">도매신</a></li>
+      <h3 class="golf">골프</h3>
+        <li><a href="https://golmarket.co.kr/admin/login.php"target="_blank">골마켓</a></li>
+        <li><a href="https://bizmallscm.golfzon.com/mim/login.do"target="_blank">골프존</a></li>
+        <li><a href="https://gpscm.golfzon.com/member/login/scmlogin.do"target="_blank">골핑</a></li>
+      <h3 class="our">우리사이트</h3>
+        <li><a href="https://eclogin.cafe24.com/Shop/"target="_blank">본필소매</a></li>
+        <li><a href="https://eclogin.cafe24.com/Shop/"target="_blank">본필도매</a></li>
+      <h3 class="other">그 외</h3>
+        <li><a href="https://www.jasondeal.kr/"target="_blank">제이슨</a></li>
+        <li><a href="https://admin.sellerhub.co.kr/shop/admin_provider/login/login.php"target="_blank">셀러허브</a></li>
+      </ol>
+    </div>
+    <div class="id">
+      <label>ID : <label>
+        <input type="text" class="idB" placeholder=ID disabled>
+      <label>PW : </label>
+        <input type="text" class="pwB"placeholder="password" disabled>
+         <input class="update" type="button" value="수정하기" onclick="
+          if(document.querySelector('.update').value === '수정하기'){
+            document.querySelector('.idB').disabled = false;
+             document.querySelector('.idB').value = onchange;
+            document.querySelector('.pwB').disabled = false;
+            document.querySelector('.update').value = '완료';
+          }else{
+            document.querySelector('.idB').disabled = true;
+            document.querySelector('.pwB').disabled = true;
+            document.querySelector('.update').value = '수정하기';
+            } " >
+    </div>
+
+  </div>
+  </body>
+</html>
