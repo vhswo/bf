@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>본필</title>
+    <style>
+      input[type = "radio"]{
+        display: none;
+      }
+      .menu{
+        display: none;
+      }
+      #allP{
+              background: gray;
+      }
+
+      label{
+        border: 1px solid black;
+      }
+      .top{
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      img{
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+
+    <script>
+    var rnName = ["BR170","BR100"];
+    var imgCode1 = ["170.jpg",0];
+    var selfPrice1 = ["99,999원","99,999원"];
+    var nomalPrice1 = ["99,999원","99,999원"];
+    var highPrice1 = ["99,999원","99,999원"];
+
+    var gfName =["BG"];
+    var imgCode2 = ["170.jpg",0];
+    var selfPrice2 = ["99,999원"];
+    var nomalPrice2 = ["99,999원"];
+    var highPrice2 = ["99,999원"];
+
+    var odName =["BT"];
+    var imgCode3 = ["170.jpg",0];
+    var selfPrice3 = ["99,999원"];
+    var nomalPrice3 = ["99,999원"];
+    var highPrice3 = ["99,999원"];
+
+    var toName =["BR"];
+    var imgCode4 = ["170.jpg",0];
+    var selfPrice4 = ["99,999원"];
+    var nomalPrice4 = ["99,999원"];
+    var highPrice4 = ["99,999원"];
+
+
+    var more = ["더보기"];
+
+    function running(){
+      var i = 0;
+      while(i< rnName.length){
+      document.write('<table>');
+      document.write('<tr>');
+      document.write('<td>'+rnName[i]+'</td>');
+      document.write('<td>'+'<img src='+imgCode1[i]+'>'+'</td>');
+      document.write('<td>'+selfPrice1[i]+'</td>');
+      document.write('<td>'+nomalPrice1[i]+'</td>');
+      document.write('<td>'+highPrice1[i]+'</td>');
+      document.write('<td>'+more[i]+'</td>');
+      document.write('</tr>');
+      document.write('</table>');
+
+      i=i+1;
+        }
+      }
+
+      function golf(){
+        var i = 0;
+        while(i<gfName.length){
+        document.write('<table>');
+        document.write('<tr>');
+        document.write('<td>'+gfName[i]+'</td>');
+        document.write('<td>'+'<img src='+imgCode2[i]+'>'+'</td>');
+        document.write('<td>'+selfPrice2[i]+'</td>');
+        document.write('<td>'+nomalPrice2[i]+'</td>');
+        document.write('<td>'+highPrice2[i]+'</td>');
+        document.write('<td>'+more[i]+'</td>');
+        document.write('</tr>');
+        document.write('</table>');
+        i=i+1;
+          }
+        }
+
+        function outdoor(){
+          var i = 0;
+          while(i<odName.length){
+
+          document.write('<table>');
+          document.write('<tr>');
+          document.write('<td>'+odName[i]+'</td>');
+          document.write('<td>'+'<img src='+imgCode3[i]+'>'+'</td>');
+          document.write('<td>'+selfPrice3[i]+'</td>');
+          document.write('<td>'+nomalPrice3[i]+'</td>');
+          document.write('<td>'+highPrice3[i]+'</td>');
+          document.write('<td>'+more[i]+'</td>');
+          document.write('</tr>');
+          document.write('</table>');
+          i=i+1;
+            }
+          }
+
+          function theOther(){
+            var i = 0;
+            while(i<toName.length){
+            document.write('<table>');
+            document.write('<tr>');
+            document.write('<td>'+toName[i]+'</td>');
+            document.write('<td>'+'<img src='+imgCode4[i]+'>'+'</td>');
+            document.write('<td>'+selfPrice4[i]+'</td>');
+            document.write('<td>'+nomalPrice4[i]+'</td>');
+            document.write('<td>'+highPrice4[i]+'</td>');
+            document.write('<td>'+more[i]+'</td>');
+            document.write('</tr>');
+            document.write('</table>');
+            i=i+1;
+              }
+            }
+
+    </script>
+  </head>
+  <body>
+    <h1>본필 가이드</h1>
+    <ul>
+      <a href="site.html"><li>사이트</li></a>
+      <a href="product.html" ><li>상품 정보</li></a>
+      <a href="theOther.html"><li>기타 필요 정보</li></a>
+    </ul>
+
+    <label for="productAll">전체상품</label>
+    <label for="productShose">운동화</label>
+    <label for="productOutdoor">등산화</label>
+    <label for="productGolf">골프화</label>
+    <label for="productTheOther">그 외</label>
+
+    <table class="top" border="1px">
+      <th>상품명</th>
+      <th>이미지</th>
+      <th>도매가</th>
+      <th>정상가</th>
+      <th>쇼핑몰가</th>
+      <th>상품정보 보기</th>
+    </table>
+    <div class="content">
+
+
+      <input type="radio" name="button" value="All" id="productAll" checked onclick="
+      if(document.querySelector('#productAll').value === 'All'){
+        document.querySelector('#shose').style.display = 'block';
+        document.querySelector('#outdoor').style.display = 'block';
+        document.querySelector('#theOther').style.display = 'block';
+        document.querySelector('#golf').style.display = 'block';
+        document.querySelector('#shose').style.background = 'gray';
+        document.querySelector('#outdoor').style.background = 'gray';
+        document.querySelector('#golf').style.background = 'gray';
+        document.querySelector('#theOther').style.background = 'gray';
+          document.querySelector('#allP').style.display = 'none';
+      }
+      ">
+
+      <input type="radio" name="button" value="running" id="productShose" onclick="
+      if(document.querySelector('#productShose').value === 'running'){
+       document.querySelector('#shose').style.display = 'block';
+       document.querySelector('#shose').style.background = 'gray';
+       document.querySelector('#outdoor').style.display = 'none';
+       document.querySelector('#theOther').style.display = 'none';
+       document.querySelector('#golf').style.display = 'none';
+        document.querySelector('#allP').style.display = 'none';
+     }
+      ">
+
+      <input type="radio" name="button" value="outdoor" id="productOutdoor" onclick="
+      if(document.querySelector('#productOutdoor').value === 'outdoor'){
+       document.querySelector('#outdoor').style.display = 'block';
+       document.querySelector('#outdoor').style.background = 'gray';
+       document.querySelector('#shose').style.display = 'none';
+       document.querySelector('#theOther').style.display = 'none';
+       document.querySelector('#golf').style.display = 'none';
+         document.querySelector('#allP').style.display = 'none';
+     }
+      ">
+
+      <input type="radio" name="button" value="golf" id="productGolf" onclick="
+      if(document.querySelector('#productGolf').value === 'golf'){
+       document.querySelector('#golf').style.display = 'block';
+       document.querySelector('#golf').style.background = 'gray';
+       document.querySelector('#shose').style.display = 'none';
+       document.querySelector('#theOther').style.display = 'none';
+       document.querySelector('#outdoor').style.display = 'none';
+         document.querySelector('#allP').style.display = 'none';
+     }
+      ">
+      <input type="radio" name="button" value="theother" id="productTheOther" onclick="
+      if(document.querySelector('#productTheOther').value === 'theother'){
+       document.querySelector('#theOther').style.display = 'block';
+       document.querySelector('#theOther').style.background = 'gray';
+       document.querySelector('#shose').style.display = 'none';
+       document.querySelector('#outdoor').style.display = 'none';
+       document.querySelector('#golf').style.display = 'none';
+         document.querySelector('#allP').style.display = 'none';
+     }
+      ">
+
+      <div id="allP" class="allP">
+        <script>
+          running();
+          outdoor();
+          golf();
+          theOther();
+        </script>
+      </div>
+
+
+      <div id="shose" class="menu Shose">
+        <script>
+          running();
+        </script>
+      </div>
+
+      <div id="outdoor" class="menu Outdoor">
+        <script>
+          outdoor();
+        </script>
+      </div>
+
+      <div id="golf"class="menu Golf">
+        <script>
+          golf();
+        </script>
+      </div>
+
+      <div id="theOther" class="menu TheOther">
+        <script>
+          theOther();
+        </script>
+      </div>
+
+
+    </div>
+
+
+  </body>
+</html>
